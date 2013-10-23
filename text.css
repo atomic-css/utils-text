@@ -1,0 +1,149 @@
+/* ==========================================================================
+   Text utilities
+   ========================================================================== */
+
+/* White space manipulation
+   ========================================================================== */
+
+/**
+ * Text truncation
+ *
+ * Example HTML:
+ *
+ * <p class="u-textTruncate">
+ *   Sed posuere consectetur est at lobortis.
+ * </p>
+ *
+ * Output:
+ *
+ * Sed posuere consec...
+ */
+
+/**
+ * Prevent text from wrapping onto multiple lines, and truncate with an
+ * ellipsis.
+ *
+ * 1. Ensure that the node has a maximum width after which truncation can
+ *    occur.
+ * 2. Fix for IE 8/9 if `word-wrap: break-word` is in effect on ancestor
+ *    nodes.
+ */
+
+.u-textTruncate {
+  overflow: hidden !important;
+  max-width: 100%; /* 1 */
+
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  word-wrap: normal !important; /* 2 */
+}
+
+/**
+ * Word breaking
+ *
+ * Break strings when their length exceeds the width of their container.
+ *
+ * Example HTML:
+ *
+ * <p class="u-textBreak">
+ *   <a href="...">
+ *    https://github.com/bits-sass/utils-text
+ *   </a>
+ * </p>
+ *
+ * Output
+ *
+ * https://github.com/bits-sass/u
+ * tils-text
+ */
+
+.u-textBreak {
+  word-wrap: break-word !important;
+}
+
+/**
+ * Prevent whitespace wrapping.
+ */
+
+.u-textNoWrap {
+  white-space: nowrap;
+}
+
+/* Horizontal alignment
+   ========================================================================== */
+
+/**
+ * Align text to left.
+ */
+
+.u-textLeft {
+  text-align: left !important;
+}
+
+/**
+ * Center the text.
+ */
+
+.u-textCenter {
+  text-align: center !important;
+}
+
+/**
+ * Align text to right.
+ */
+
+.u-textRight {
+  text-align: right !important;
+}
+
+/* Color inheritance
+   ========================================================================== */
+
+/**
+ * Inherit the ancestor's text color.
+ */
+
+.u-textInheritColor {
+  color: inherit !important;
+}
+
+/**
+ * Inherit the ancestor's text color for all states.
+ */
+
+.u-textInheritAllColor,
+.u-textInheritAllColor:hover,
+.u-textInheritAllColor:focus,
+.u-textInheritAllColor:active {
+  color: inherit !important;
+}
+
+/* Text transformation
+   ========================================================================== */
+
+/**
+ * Transform text to upper case.
+ */
+
+.u-textUpperCase {
+  text-transform: uppercase !important;
+}
+
+/**
+ * Transform text to lower case.
+ */
+
+.u-textLowerCase {
+  text-transform: lowercase !important;
+}
+
+/* Line height manipulation
+   ========================================================================== */
+
+/**
+ * Make line height of text match its font size.
+ */
+
+.u-textLineHeightMatch {
+  line-height: 1 !important;
+}

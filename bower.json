@@ -1,0 +1,19 @@
+{
+  "name": "atomic-css-utils-text",
+  "version": "1.0.0",
+  "homepage": "https://github.com/atomic-css/utils-text",
+  "authors": [
+    "Lukáš Mladý",
+    "Nicolas Gallagher"
+  ],
+  "description": "Utilities for text-related CSS",
+  "main": [
+    "text.css"
+  ],
+  "license": "MIT",
+  "ignore": [
+    ".*",
+    "CHANGELOG.md",
+    "component.json"
+  ]
+}
